@@ -16,9 +16,9 @@ template <size_t MAX_ARRAY_SIZE>
 int FindMinValue(std::array<int, MAX_ARRAY_SIZE> ranNums) {
     int min = ranNums[0];
 
-    for (int counter = 0; counter < ranNums.size(); counter++) {
-        if (min > ranNums[counter]) {
-            min = ranNums[counter];
+    for (int randomNumber : ranNums) {
+        if (min > randomNumber) {
+            min = randomNumber;
         }
     }
     return min;
